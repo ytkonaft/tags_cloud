@@ -1,4 +1,4 @@
-First of all run command for install dependencies
+Run command for install dependencies
 
 ### `npm i`
 
