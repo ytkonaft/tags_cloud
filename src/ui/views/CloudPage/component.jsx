@@ -25,7 +25,7 @@ class CloudPage extends React.PureComponent {
                   label={tag.label}
                   id={id}
                   key={id}
-                  fontSize={tag.sentimentScore}
+                  sentimentScore={tag.sentimentScore}
                 />
               );
             })}
