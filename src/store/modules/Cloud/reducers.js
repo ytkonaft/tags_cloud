@@ -1,7 +1,7 @@
 import { createReducer } from "store/utils";
 import * as types from "./types";
 
-const postInitState = {
+const cloudInitState = {
   fetching: true,
   tags: {
     tagById: null,
@@ -10,7 +10,7 @@ const postInitState = {
   error: null
 };
 
-const postReducer = createReducer(postInitState)({
+const cloudReducer = createReducer(cloudInitState)({
   [types.FETCING_CLOUD]: (state, { payload }) => ({
     ...state,
     fetching: payload
@@ -23,4 +23,4 @@ const postReducer = createReducer(postInitState)({
   })
 });
 
-export default postReducer;
+export default cloudReducer;
