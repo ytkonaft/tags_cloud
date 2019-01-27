@@ -5,7 +5,8 @@ const cloudInitState = {
   fetching: true,
   tags: {
     tagById: null,
-    tagsOrder: null
+    tagsOrder: null,
+    maxScore: 0
   },
   error: null
 };

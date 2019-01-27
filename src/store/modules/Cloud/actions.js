@@ -5,10 +5,11 @@ export const cloudFetch = value => ({
   payload: value
 });
 
-export const setTags = ({ objById, arrayIds }) => ({
+export const setTags = ({ objById, arrayIds, maxScore }) => ({
   type: types.SET_TAGS,
   payload: {
     tagById: objById,
-    tagsOrder: arrayIds
+    tagsOrder: arrayIds,
+    maxScore
   }
 });
